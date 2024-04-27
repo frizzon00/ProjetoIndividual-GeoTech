@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #71dfee;
+    height: 100%;
+}
+
+.header {
+    background: linear-gradient(to top right, #4ecf27, #6ae944);
+    border-bottom: 3px solid #0066ff;
+    height: 13vh;
+    background-color: #43da15;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.titulo {
+    color: #0066ff;
+    font-weight: 600;
+
+}
+
+.logo {
+    padding: 20px;
+}
+
+.principal {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    color: #e3b062;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold;
+}
+
+.conteudo {
+    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    /* background-color: #71dfee; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inicio2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.continentes{
+    margin: 30px;
+    height: 40vh;
+    width: 20vw;
+    background-color: rgb(197, 216, 235);
+    display: flex;
+    justify-content: start;
+    border: 2px solid #0066ff; /* Cor da borda */
+    border-radius: 18px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardimg{
+    margin-top: 20px;
+    width: 160px;
+    height: 160px;
+    
+}
+
+.botaoGraficos {
+    border: 1px solid #0066ff;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(4, 82, 199, 0.5), rgba(113, 223, 238, 0.5));
+    cursor: pointer;
+    color: #0a0066;
+  }
+
+h5{
+    color: #0066ff;
+}
+  
+
+.footer {
+    border-top: 3px solid #0066ff;
+    width: 100%;
+    height: 8vh;
+    color: #0066ff;
+    background: linear-gradient(to top left, #66d843, #4cf719);
+    font-weight: 600;
+
+}
+
+.footerp {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudosobre{
+    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    /* background-color: #71dfee; */
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.empresa{
+    color: aliceblue;
+    justify-content: start;
+    margin: 30px;
+}
+
+.contato{
+    color: aliceblue;
+    justify-content: center;
+    margin: 30px;
+    
+}
+
+.tituloh2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.pcontato{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+.imgsobre{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    padding: 7px;
+}
+/* li{
+    padding: 10px;
+} */
+
+.conteudocontato{
+    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    /* background-color: #71dfee; */
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+}
+.esquerda{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(197, 216, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0066ff; /* Cor da borda */
+    border-radius: 18px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.direita{
+    
+    width: 500px;
+    height: 500px;
+    background-color: rgb(197, 216, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0066ff; /* Cor da borda */
+    border-radius: 18px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0066ff;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #0066ff;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background: linear-gradient(to top left, #66d843, #4cf719);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #14ad1c;
+  }
+

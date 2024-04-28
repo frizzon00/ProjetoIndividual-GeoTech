@@ -3,18 +3,16 @@ body {
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #71dfee;
-    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    background: linear-gradient(to bottom right, #c0d2ec, #dbdbdb);
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    background: linear-gradient(to top right, #4ecf27, #6ae944);
-    border-bottom: 3px solid #0066ff;
+    background: linear-gradient(to top right, #0066ff, #105ec4);
+    border-bottom: 3px solid #d7dde7;
     height: 13vh;
-    background-color: #43da15;
-
 }
 
 .container {
@@ -28,7 +26,7 @@ body {
 }
 
 .titulo {
-    color: #0066ff;
+    color: #ccd6e6;
     font-weight: 600;
 
 }
@@ -56,12 +54,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #0066ff;
+    color: #d3dce9;
     font-weight: bold;
 }
 
 .conteudo {
-    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    background: linear-gradient(to bottom right, #c0d2ec, #dbdbdb);
     /* background-color: #71dfee; */
     width: 100%;
     height: 100vh;
@@ -93,6 +91,11 @@ a {
     border-radius: 18px;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s;
+}
+
+.continentes:hover{
+    transform: scale(1.1);
 }
 
 .cardimg{
@@ -116,20 +119,20 @@ h5{
   
 
 .footer {
-    border-top: 3px solid #0066ff;
+    border-top: 3px solid #ccd6e6;
     width: 100%;
     height: 8vh;
-    color: #0066ff;
-    background: linear-gradient(to top left, #66d843, #4cf719);
+    color: #ccd6e6;
+    background: linear-gradient(to top right, #0066ff, #105ec4);
     font-weight: 600;
 } 
 
 .footercontinentes {
-    border-top: 3px solid #0066ff;
+    border-top: 3px solid #ccd6e6;
     width: 100%;
     height: 8vh;
-    color: #0066ff;
-    background: linear-gradient(to top left, #66d843, #4cf719);
+    color: #ccd6e6;
+    background: linear-gradient(to top right, #0066ff, #105ec4);
     font-weight: 600;
     margin-top: -100px;
 } 
@@ -141,8 +144,10 @@ h5{
     justify-content: center;
 }
 
+/* FIM Pagina inicial */
+
 .conteudosobre{
-    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    background: linear-gradient(to bottom right, #c0d2ec, #dbdbdb);
     /* background-color: #71dfee; */
     width: 100%;
     height: 88vh;
@@ -155,6 +160,29 @@ h5{
     justify-content: start;
     margin: 30px;
 }
+
+
+
+
+
+.imgsobre{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    padding: 7px;
+}
+
+/* FIM PAGINA SOBRE */
 
 .contato{
     color: aliceblue;
@@ -176,28 +204,10 @@ h5{
     text-align: center;
 }
 
-.imgsobre{
-    width: 300px;
-    height: 300px;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 20px;
 
-}
-
-h2{
-    font-size: 20px;
-}
-p{
-    font-size: 15px;
-    padding: 7px;
-}
-/* li{
-    padding: 10px;
-} */
 
 .conteudocontato{
-    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+    background: linear-gradient(to bottom right, #c0d2ec, #dbdbdb);
     /* background-color: #71dfee; */
     width: 100%;
     height: 120vh;
@@ -270,8 +280,10 @@ h1 {
     background-color: #14ad1c;
   }
 
-.conteudoafrica{
-    background: linear-gradient(to bottom right, #0452c7, #71dfee);
+/* FIM PAGINA CONTATO */
+
+.conteudograf{
+    background: linear-gradient(to bottom right, #c0d2ec, #dbdbdb);
     /* background-color: #71dfee; */
     width: 100%;
     height: 100%;
@@ -289,7 +301,7 @@ h1 {
     margin-inline: 40px;
 }
 
-.graficoafrica{
+.grafico{
     width: 85vw;
     height: 40vh;
     justify-content: center;
@@ -297,9 +309,10 @@ h1 {
    
 }
 
-.tituloafrica{
-    color: aliceblue;
+.titulograf{
+    color: #0066ff;
 }
+
 
 .paises{
     width: 100%;
@@ -322,6 +335,11 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
+}
+
+.cardp:hover{
+    transform: scale(1.1);
 }
 
 .informacoes{

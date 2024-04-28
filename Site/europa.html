@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoTech - Página Inicial</title>
+    <title>GeoTech - Página Europa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,7 +19,7 @@
             </div>
             <ul class="navbar">
                 <li>
-                    <a href="index.html">Inicial</a>
+                    <a href="index.html">Início</a>
                 </li>
                 <li>
                     <a href="sobre.html">Sobre</a>
@@ -33,14 +33,14 @@
             </ul>
         </div>
     </div>
-    <div class="conteudoafrica">
-        <h1 class="tituloafrica">Continente Europeu</h1>
-        <div class="graficoafrica">
+    <div class="conteudograf">
+        <h1 class="titulograf">Continente Europeu</h1>
+        <div class="grafico">
             <canvas id="myChart" class="chart"></canvas>
             <canvas id="myChart2" class="chart"></canvas>
         </div>
         <br>
-        <h1 class="tituloafrica">Paises Europeus</h1>
+        <h1 class="titulograf">Paises Europeus</h1>
         <div class="paises">
             <div class="cardp">
                 <img class="bandeira"
@@ -108,202 +108,338 @@
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Colombia-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/bosnia%202-1111x740.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Colômbia</p>
-                    <p class="capital">Capital: Bogotá</p>
+                    <p class="pais">Pais: Bósnia e Herzegovina</p>
+                    <p class="capital">Capital: Sarajevo</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Costa-Rica-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Bulgaria-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Costa Rica</p>
-                    <p class="capital">Capital: San José</p>
+                    <p class="pais">Pais: Bulgária</p>
+                    <p class="capital">Capital: Sófia</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Cuba-800x533.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Chipre-1111x740.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Cuba</p>
-                    <p class="capital">Capital: Havana</p>
+                    <p class="pais">Pais: Chipre</p>
+                    <p class="capital">Capital: Nicósia</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Dominica-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Cro%C3%A1cia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Dominica</p>
-                    <p class="capital">Capital: Roseau</p>
+                    <p class="pais">Pais: Croácia</p>
+                    <p class="capital">Capital: Zagreb</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/El-Salvador-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Dinamarca-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: El Salvador</p>
-                    <p class="capital">Capital: San Salvador</p>
+                    <p class="pais">Pais: Dinamarca</p>
+                    <p class="capital">Capital: Copenhague</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Equador-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Eslovaquia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Equador</p>
-                    <p class="capital">Capital: Quito</p>
+                    <p class="pais">Pais: Eslováquia</p>
+                    <p class="capital">Capital: Bratislava</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="data:image/jpeg;base64,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">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Eslov%C3%AAnia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Granada</p>
-                    <p class="capital">Capital: Saint George's</p>
+                    <p class="pais">Pais: Eslovênia</p>
+                    <p class="capital">Capital: Liubliana</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Guatemala-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Espanha-800x533.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Guatemala</p>
-                    <p class="capital">Capital: Cidade da Guatemala</p>
+                    <p class="pais">Pais: Espanha</p>
+                    <p class="capital">Capital: Madrid</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Guiana-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/est%C3%B4nia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Guiana</p>
-                    <p class="capital">Capital: Georgetown</p>
+                    <p class="pais">Pais: Estônia</p>
+                    <p class="capital">Capital: Tallinn</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Haiti-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Finl%C3%A2ndia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Haiti</p>
-                    <p class="capital">Capital: Porto Principe</p>
+                    <p class="pais">Pais: Finlândia</p>
+                    <p class="capital">Capital: Helsinque</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Honduras-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Franca-800x533.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Honduras</p>
-                    <p class="capital">Capital: Tegucigalpa</p>
+                    <p class="pais">Pais: França</p>
+                    <p class="capital">Capital: Paris</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Jamaica-1111x740.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Georgia-800x533.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Jamaica</p>
-                    <p class="capital">Capital: Kingston</p>
+                    <p class="pais">Pais: Geórgia</p>
+                    <p class="capital">Capital: Tblissi</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/M%C3%A9xico-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Grecia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: México</p>
-                    <p class="capital">Capital: Cidade do México</p>
+                    <p class="pais">Pais: Grécia</p>
+                    <p class="capital">Capital: Atenas</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Nicaragua-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Hungria-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Nicarágua</p>
-                    <p class="capital">Capital: Manágua</p>
+                    <p class="pais">Pais: Hungria</p>
+                    <p class="capital">Capital: Budapeste</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Panama-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Irlanda-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Panamá</p>
-                    <p class="capital">Capital: Cidade do Panamá</p>
+                    <p class="pais">Pais: Irlanda</p>
+                    <p class="capital">Capital: Dublin</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Paraguai-1-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Islandia-800x533.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Paraguai</p>
-                    <p class="capital">Capital: Assunção</p>
+                    <p class="pais">Pais: Islândia</p>
+                    <p class="capital">Capital: Reykjavik</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Peru-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Italia-800x533.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Peru</p>
-                    <p class="capital">Capital: Lima</p>
+                    <p class="pais">Pais: Itália</p>
+                    <p class="capital">Capital: Roma</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Republica_Dominicana-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Kosovo-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: República Dominicana</p>
-                    <p class="capital">Capital: Santo Domingo</p>
+                    <p class="pais">Pais: Kosovo</p>
+                    <p class="capital">Capital: Pristina</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/fotos/Santa%20L%C3%BAcia-500x333.png">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Letonia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Santa Lúcia</p>
-                    <p class="capital">Capital: Castries</p>
+                    <p class="pais">Pais: Letônia</p>
+                    <p class="capital">Capital: Riga</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Sao_Cristovao_Nevis-500x333.jpg">
+                    src="data:image/jpeg;base64,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">
                 <div class="informaçoes">
-                    <p class="pais">Pais: São Cristovão e Neves</p>
-                    <p class="capital">Capital: Basseterre</p>
+                    <p class="pais">Pais: Liechtenstein</p>
+                    <p class="capital">Capital: Vaduz</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Sao_Vicente_Granadinas-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/litu%C3%A2nia-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: São Vicente e Granadinas</p>
-                    <p class="capital">Capital: Kingstwon</p>
+                    <p class="pais">Pais: Lituânia</p>
+                    <p class="capital">Capital: Vilnius</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Suriname-500x333.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Luxemburgo-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Suriname</p>
-                    <p class="capital">Capital: Paramaribo</p>
+                    <p class="pais">Pais: Luxemburgo</p>
+                    <p class="capital">Capital: Luxemburgo</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Trinidad-e-Tobago-800x533.jpg">
+                    src="https://img.freepik.com/vetores-premium/bandeira-da-macedonia-acenando-abstrato_183326-112.jpg?size=626&ext=jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Trinidad e Tobago</p>
-                    <p class="capital">Capital: Porto Espanha</p>
+                    <p class="pais">Pais: Macedônia do Norte</p>
+                    <p class="capital">Capital: Skopje</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Uruguay-1111x740.jpg">
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Malta-1111x740.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Uruguai</p>
-                    <p class="capital">Capital: Montevidéu</p>
+                    <p class="pais">Pais: Malta</p>
+                    <p class="capital">Capital: Valeta</p>
                 </div>
             </div>
             <div class="cardp">
                 <img class="bandeira"
-                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Venezuela-500x333.jpg">
+                    src="https://img.freepik.com/vetores-premium/bandeira-da-moldavia-ao-vento-parte-de-uma-serie-bandeira-da-moldavia_126712-269.jpg?size=626&ext=jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Venezuela</p>
-                    <p class="capital">Capital: Caracas</p>
+                    <p class="pais">Pais: Moldávia</p>
+                    <p class="capital">Capital: Chisinau</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Monaco-1111x740.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Mônaco</p>
+                    <p class="capital">Capital: Mônaco</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://img.freepik.com/fotos-premium/bandeira-de-montenegro-como-pano-de-fundo_454892-1320.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Montenegro</p>
+                    <p class="capital">Capital: Podgorica</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Noruega-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Noruega</p>
+                    <p class="capital">Capital: Oslo</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Holanda-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Países Baixos</p>
+                    <p class="capital">Capital: Amsterdã</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Pol%C3%B4nia-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Polônia</p>
+                    <p class="capital">Capital: Varsóvia</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Portugal-1111x740.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Portugal</p>
+                    <p class="capital">Capital: Lisboa</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/reino-unido-1111x740.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Reino Unido</p>
+                    <p class="capital">Capital: Londres</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Rep%C3%BAblica-Tcheca-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: República Tcheca</p>
+                    <p class="capital">Capital: Praga</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Rom%C3%AAnia-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Romênia</p>
+                    <p class="capital">Capital: Bucareste</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Russia-800x533.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Rússia</p>
+                    <p class="capital">Capital: Moscou</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/San_Marino-800x533.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: San Marino</p>
+                    <p class="capital">Capital: San Marino</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Servia-1111x740.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Sérvia</p>
+                    <p class="capital">Capital: Belgrado</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Su%C3%A9cia-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Suécia</p>
+                    <p class="capital">Capital: Estocolmo</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Su%C3%AD%C3%A7a-1111x740.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Suíça</p>
+                    <p class="capital">Capital: Berna</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Turquia-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Turquia</p>
+                    <p class="capital">Capital: Ancara</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Ucrania-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Ucrânia</p>
+                    <p class="capital">Capital: Kiev</p>
+                </div>
+            </div>
+            <div class="cardp">
+                <img class="bandeira"
+                    src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Vaticano-500x333.jpg">
+                <div class="informaçoes">
+                    <p class="pais">Pais: Vaticano</p>
+                    <p class="capital">Capital: Cidade do Vaticano</p>
                 </div>
             </div>
         </div>

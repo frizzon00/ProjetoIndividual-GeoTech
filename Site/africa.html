@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bodyaf">
+<body>
     <div class="header">
-
         <div class="container">
             <div class="principal">
                 <img src="https://i.pinimg.com/originals/4b/97/c1/4b97c18135696f758ff3aee979f868a0.png" alt=""
@@ -36,7 +35,8 @@
     <div class="conteudoafrica">
         <h1 class="tituloafrica">Continente Africano</h1>
         <div class="graficoafrica">
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" class="chart"></canvas>
+            <canvas id="myChart2" class="chart"></canvas>
         </div>
         <br>
         <h1 class="tituloafrica">Paises Africanos</h1>
@@ -45,7 +45,7 @@
                 <img class="bandeira"
                     src="https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Africa-500x333.jpg">
                 <div class="informaçoes">
-                    <p class="pais">Pais: Africa do Sul</p>
+                    <p class="pais">Pais: África do Sul</p>
                     <p class="capital">Capital: Cidade do Cabo</p>
                 </div>
             </div>
@@ -473,11 +473,14 @@
                     <p class="capital">Capital: Harare</p>
                 </div>
             </div>
+            
         </div>
-        <div class="footer">
+        </div>
+        <div class="footercontinentes">
             <p class="footerp">Todos os Direitos reservados GeoTech</p>
         </div>
 </body>
+
 
 </html>
 
@@ -487,53 +490,104 @@
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Egito', 'África do Sul', 'Argélia', 'Nigéria', 'Marrocos'],
-            datasets: [{
-                label: 'PIB - Top 5 Países na África',
-                data: [900.675, 703.709, 298.448, 216.245, 210.875],
-                backgroundColor: 'rgba(102, 216, 67, 0.9)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'PIB (Million USD)',
-                        color: 'aliceblue' // Cor do título do eixo y
-                    },
-                    ticks: {
-                        color: 'aliceblue' // Cor dos valores do eixo y
-                    }
+    type: 'bar',
+    data: {
+        labels: ['Ilhas Maurício', 'Seychelles', 'Argélia', 'Tunísia', 'Botswana'],
+        datasets: [{
+            label: 'IDH - Top 5 Países na África',
+            data: [0.801, 0.797, 0.748, 0.739, 0.717], // Valores em milhões de dólares
+            backgroundColor: 'rgba(102, 216, 67, 0.9)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'IDH',
+                    color: 'aliceblue' // Cor do título do eixo y
                 },
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Paises',
-                        color: 'aliceblue' // Cor do título do eixo x
-                    },
-                    ticks: {
-                        color: 'aliceblue' // Cor dos valores do eixo x
-                    }
+                ticks: {
+                    color: 'aliceblue' // Cor dos valores do eixo y
                 }
             },
-            plugins: {
-                legend: {
-                    labels: {
-                        color: 'aliceblue' // Cor do texto da legenda
-                    }
+            x: {
+                title: {
+                    display: true,
+                    text: 'Países',
+                    color: 'aliceblue' // Cor do título do eixo x
+                },
+                ticks: {
+                    color: 'aliceblue' // Cor dos valores do eixo x
                 }
-            },
-            onRender: function (chart) {
-                chart.legend.legendItems[0].fontColor = 'aliceblue';
-                chart.update();
             }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'aliceblue' // Cor do texto da legenda
+                }
+            }
+        },
+        onRender: function (chart) {
+            chart.legend.legendItems[0].fontColor = 'aliceblue';
+            chart.update();
         }
-    });
+    }
+});
+
+const ctx2 = document.getElementById('myChart2');
+
+    new Chart(ctx2, {
+    type: 'bar',
+    data: {
+        labels: ['Egito', 'África do Sul', 'Argélia', 'Nigéria', 'Marrocos'],
+        datasets: [{
+            label: 'PIB - Top 5 Países na África',
+            data: [900675, 703709, 298448, 216245, 210875], // Valores em milhões de dólares
+            backgroundColor: 'rgba(102, 216, 67, 0.9)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'PIB (Million USD)',
+                    color: 'aliceblue' // Cor do título do eixo y
+                },
+                ticks: {
+                    color: 'aliceblue' // Cor dos valores do eixo y
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Países',
+                    color: 'aliceblue' // Cor do título do eixo x
+                },
+                ticks: {
+                    color: 'aliceblue' // Cor dos valores do eixo x
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'aliceblue' // Cor do texto da legenda
+                }
+            }
+        },
+        onRender: function (chart) {
+            chart.legend.legendItems[0].fontColor = 'aliceblue';
+            chart.update();
+        }
+    }
+});
 
 
 

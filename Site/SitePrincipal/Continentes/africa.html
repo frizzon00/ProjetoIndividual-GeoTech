@@ -496,7 +496,7 @@
         datasets: [{
             label: 'IDH - Top 5 Países na África',
             data: [0.801, 0.797, 0.748, 0.739, 0.717], // Valores em milhões de dólares
-            backgroundColor: 'rgba(0, 102, 255, 0.7)',
+            backgroundColor: 'rgba(0,212,255,1)',
             borderWidth: 1
         }]
     },
@@ -507,32 +507,32 @@
                 title: {
                     display: true,
                     text: 'IDH',
-                    color: '#0066ff' // Cor do título do eixo y
+                    color: 'white' // Cor do título do eixo y
                 },
                 ticks: {
-                    color: '#0066ff' // Cor dos valores do eixo y
+                    color: 'white' // Cor dos valores do eixo y
                 }
             },
             x: {
                 title: {
                     display: true,
                     text: 'Países',
-                    color: '#0066ff' // Cor do título do eixo x
+                    color: 'white' // Cor do título do eixo x
                 },
                 ticks: {
-                    color: '#0066ff' // Cor dos valores do eixo x
+                    color: 'white' // Cor dos valores do eixo x
                 }
             }
         },
         plugins: {
             legend: {
                 labels: {
-                    color: '#0066ff' // Cor do texto da legenda
+                    color: 'white' // Cor do texto da legenda
                 }
             }
         },
         onRender: function (chart) {
-            chart.legend.legendItems[0].fontColor = '#0066ff';
+            chart.legend.legendItems[0].fontColor = 'white';
             chart.update();
         }
     }
@@ -547,7 +547,7 @@ const ctx2 = document.getElementById('myChart2');
         datasets: [{
             label: 'PIB - Top 5 Países na África',
             data: [900675, 703709, 298448, 216245, 210875], // Valores em milhões de dólares
-            backgroundColor: 'rgba(0, 102, 255, 0.7)',
+            backgroundColor: 'rgba(0,212,255,1)',
             borderWidth: 1
         }]
     },
@@ -558,32 +558,32 @@ const ctx2 = document.getElementById('myChart2');
                 title: {
                     display: true,
                     text: 'PIB (Million USD)',
-                    color: '#0066ff' // Cor do título do eixo y
+                    color: 'white' // Cor do título do eixo y
                 },
                 ticks: {
-                    color: '#0066ff' // Cor dos valores do eixo y
+                    color: 'white' // Cor dos valores do eixo y
                 }
             },
             x: {
                 title: {
                     display: true,
                     text: 'Países',
-                    color: '#0066ff' // Cor do título do eixo x
+                    color: 'white' // Cor do título do eixo x
                 },
                 ticks: {
-                    color: '#0066ff' // Cor dos valores do eixo x
+                    color: 'white' // Cor dos valores do eixo x
                 }
             }
         },
         plugins: {
             legend: {
                 labels: {
-                    color: '#0066ff' // Cor do texto da legenda
+                    color: 'white' // Cor do texto da legenda
                 }
             }
         },
         onRender: function (chart) {
-            chart.legend.legendItems[0].fontColor = '#0066ff';
+            chart.legend.legendItems[0].fontColor = 'white';
             chart.update();
         }
     }

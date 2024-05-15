@@ -220,9 +220,16 @@ a {
 
 .cardimg {
     margin-top: 20px;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
 
+}
+
+.descricao{
+    font-size: 14px;
+    color: #1d6d92;
+    margin-top: -15px;
+    margin-bottom: 5px;
 }
 
 .botaoGraficos {
@@ -230,7 +237,18 @@ a {
     border-radius: 10px;
     background-color: #8fe2de;
     cursor: pointer;
-    color: #304d4d;
+    color: #1d6d92;
+    font-weight: 600;
+}
+
+.botaoJogos {
+    border: 1px solid #30aad2;
+    border-radius: 10px;
+    background: rgb(80, 201, 241);
+    cursor: pointer;
+    color: #1d6d92;
+    font-weight: 600;
+    height: 26px;
 }
 
 h5 {

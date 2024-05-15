@@ -163,7 +163,7 @@
             datasets: [{
                 label: 'IDH - Top 5 Países na América Latina',
                 data: [0.851, 0.845, 0.840, 0.767, 0.758],
-                backgroundColor: 'rgba(0, 102, 255, 0.7)',
+                backgroundColor: 'rgba(0,212,255,1)',
                 borderWidth: 1
             }]
         },
@@ -174,32 +174,32 @@
                     title: {
                         display: true,
                         text: 'IDH',
-                        color: '#0066ff' // Cor do título do eixo y
+                        color: 'white' // Cor do título do eixo y
                     },
                     ticks: {
-                        color: '#0066ff' // Cor dos valores do eixo y
+                        color: 'white' // Cor dos valores do eixo y
                     }
                 },
                 x: {
                     title: {
                         display: true,
                         text: 'Países',
-                        color: '#0066ff' // Cor do título do eixo x
+                        color: 'white' // Cor do título do eixo x
                     },
                     ticks: {
-                        color: '#0066ff' // Cor dos valores do eixo x
+                        color: 'white' // Cor dos valores do eixo x
                     }
                 }
             },
             plugins: {
                 legend: {
                     labels: {
-                        color: '#0066ff' // Cor do texto da legenda
+                        color: 'white' // Cor do texto da legenda
                     }
                 }
             },
             onRender: function (chart) {
-                chart.legend.legendItems[0].fontColor = '#0066ff';
+                chart.legend.legendItems[0].fontColor = 'white';
                 chart.update();
             }
         }
@@ -215,7 +215,7 @@
             datasets: [{
                 label: 'PIB - Top 5 Países na América Latina',
                 data: [2140000, 636000, 435000, 411000, 326000],
-                backgroundColor: 'rgba(0, 102, 255, 0.7)',
+                backgroundColor: 'rgba(0,212,255,1)',
                 borderWidth: 1
             }]
         },

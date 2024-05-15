@@ -4,18 +4,40 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   display: flex;
-    padding: 0 10px;
-    align-items: center;
-    justify-content: start;
-    min-height: 100vh;
-    background: rgb(53,169,208);
-    background: linear-gradient(90deg, rgba(53,169,208,1) 0%, rgba(24,126,169,1) 35%, rgba(0,212,255,1) 100%), url('../Site/fundo3.png');
-    
-    flex-direction: column;
-  
+  padding: 0 10px;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  background: rgb(53, 169, 208);
+  background: linear-gradient(90deg, rgba(53, 169, 208, 1) 0%, rgba(24, 126, 169, 1) 35%, rgba(0, 212, 255, 1) 100%), url('../Site/fundo3.png');
+
+  flex-direction: column;
+
 }
+
+.tela {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.voltarInicio {
+  font-size: 1em;
+  padding: 0.7em 1em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: -195px;
+margin-top: 18px;
+
+}
+
 .wrapper {
   position: absolute;
   width: 90%;
@@ -28,17 +50,19 @@ body {
   left: 50%;
   text-align: center;
   border-radius: 1em;
+  margin-top: 20px;
 }
 
-#result{
+#result {
   color: #ffff;
   font-size: 2em;
 
 }
+
 .controls-container {
-  background: rgb(53,169,208);
-    background: linear-gradient(90deg, rgba(53,169,208,1) 0%, rgba(24,126,169,1) 35%, rgba(0,212,255,1) 100%), url('../Site/fundo3.png');
-    
+  background: rgb(53, 169, 208);
+  background: linear-gradient(90deg, rgba(53, 169, 208, 1) 0%, rgba(24, 126, 169, 1) 35%, rgba(0, 212, 255, 1) 100%), url('../Site/fundo3.png');
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -48,6 +72,7 @@ body {
   flex-direction: column;
   top: 0;
 }
+
 #start {
   font-size: 1.2em;
   padding: 1em 3em;
@@ -57,6 +82,7 @@ body {
   border-radius: 2em;
   cursor: pointer;
 }
+
 #letter-container {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +90,7 @@ body {
   justify-content: center;
   margin-top: 2em;
 }
+
 #letter-container button {
   background-color: #ffffff;
   border: 2px solid #7786f5;
@@ -74,36 +101,44 @@ body {
   height: 3em;
   width: 3em;
 }
+
 #letter-container .correct {
   background-color: #008000;
   color: #ffffff;
   border: 2px solid #008000;
 }
+
 #letter-container .incorrect {
   background-color: #8a8686;
   color: #ffffff;
   border: 2px solid #8a8686;
 }
+
 .hint-ref {
   margin-bottom: 1em;
 }
+
 .hint-ref span {
   font-weight: 600;
 }
+
 #chanceCount {
   margin: 1em 0;
   position: absolute;
   top: 0.62em;
   right: 2em;
 }
+
 #word {
   font-weight: 600;
   margin: 1em 0 2em 0;
 }
+
 #word span {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .hide {
   display: none;
 }

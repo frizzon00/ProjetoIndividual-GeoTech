@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -200,6 +204,8 @@ a {
     justify-content: center;
 }
 
+
+
 .continentes {
     margin: 30px;
     height: 40vh;
@@ -207,17 +213,56 @@ a {
     background-color: rgb(197, 216, 235);
     display: flex;
     justify-content: start;
-    border: 2px solid #30aad2;
+    border: 3px solid #30aad2;
     border-radius: 18px;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
+    
 }
 
 .continentes:hover {
     transform: scale(1.1);
 }
 
+@keyframes changeColor {
+    0% { border-color: rgb(255, 171, 62); }
+    25% { border-color: rgb(82, 255, 218); }
+    50% { border-color: rgb(45, 253, 45); }
+    75% { border-color: rgb(255, 38, 38); }
+  }
+
+  @keyframes changeColor1 {
+    0% { color: rgb(8, 41, 184); }
+    25% { color: rgb(186, 82, 255); }
+    50% { color: rgb(12, 124, 12); }
+    75% { color: rgb(255, 38, 38); }
+  }
+
+.continentesp {
+    margin: 30px;
+    height: 40vh;
+    width: 20vw;
+    background-color: rgb(197, 216, 235);
+    display: flex;
+    justify-content: start;
+    border: 5px solid #30aad2;
+    border-radius: 18px;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    animation: changeColor 4s linear infinite;
+}
+
+.continentesp:hover {
+    transform: scale(1.2);
+}
+
+.desafio,
+.quiz{
+    animation: changeColor1 4s linear infinite;
+    font-weight: 700;
+}
 .cardimg {
     margin-top: 20px;
     width: 140px;
@@ -290,7 +335,7 @@ background: linear-gradient(90deg, rgba(48,170,210,1) 0%, rgba(51,186,242,1) 40%
     background: rgb(53,169,208);
     background: linear-gradient(90deg, rgba(53,169,208,0.5) 0%, rgba(24,126,169,0.5) 35%, rgba(0,212,255,0.5) 100%), url('../Site/fundo3.png');
      width: 100%;
-    height: 83vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     overflow: hidden;

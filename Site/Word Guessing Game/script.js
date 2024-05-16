@@ -91,7 +91,7 @@ const init = () => {
 
     //Character button onclick
     button.addEventListener("click", () => {
-      message.innerText = `Correct Letter`;
+      message.innerText = `Letra Correta`;
       message.style.color = "#008000";
       let charArray = randomWord.toUpperCase().split("");
       let inputSpace = document.getElementsByClassName("inputSpace");
@@ -108,7 +108,7 @@ const init = () => {
             winCount += 1;
             //If winCount equals word length
             if (winCount == charArray.length) {
-              resultText.innerHTML = "Parabéns, Você Venceu";
+              resultText.innerHTML = "Parabéns, você Venceu";
               startBtn.innerText = "Jogar Novamente";
               //block all buttons
               blocker();
@@ -122,10 +122,10 @@ const init = () => {
         document.getElementById(
           "chanceCount"
         ).innerText = `Chances Left: ${lossCount}`;
-        message.innerText = `Incorrect Letter`;
+        message.innerText = `Letra Incorreta`;
         message.style.color = "#ff0000";
         if (lossCount == 0) {
-          word.innerHTML = `The word was: <span>${randomWord}</span>`;
+          word.innerHTML = `O País era: <span>${randomWord}</span>`;
           resultText.innerHTML = "Game Over";
           blocker();
         }

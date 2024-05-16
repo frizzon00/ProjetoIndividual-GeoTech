@@ -1,10 +1,9 @@
-/* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body{
   display: flex;
@@ -13,8 +12,35 @@ body{
   min-height: 100vh;
   background: rgb(53,169,208);
   background: linear-gradient(90deg, rgba(53,169,208,1) 0%, rgba(24,126,169,1) 35%, rgba(0,212,255,1) 100%), url('../Site/fundo3.png');
-    
+
   flex-direction: column;
+}
+
+
+.tela{
+  width:  100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.voltarInicio {
+  font-size: 1em;
+  padding: 0.7em 1em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: -97px;
+  margin-bottom: 7px;
+  width: fit-content;
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .start{
@@ -38,8 +64,8 @@ body{
   justify-content: center;
 }
 .cards{
-  height: 400px;
-  width: 400px;
+  height: 480px;
+  width: 480px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -85,11 +111,12 @@ body{
   transition: transform 0.25s linear;
 }
 .card .front-view img{
-  width: 19px;
+  width: 58px;
+  height: 80px;
 }
-.card .back-view img{
+/* .card .back-view img{
   max-width: 45px;
-}
+} */
 .card .back-view{
   transform: rotateY(-180deg);
 }

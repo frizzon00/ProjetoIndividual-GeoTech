@@ -3,12 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo Das Bandeiras</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="flags.css" />
   </head>
   <body>
@@ -20,9 +14,18 @@
     </div>
     <div class="controls-container">
       <p id="result"></p>
+      <lord-icon
+      src="https://cdn.lordicon.com/xahuqqcs.json"
+      trigger="loop"
+      stroke="bold"
+      delay="600"
+      state="hover-rotate-up-to-down"
+      colors="primary:#ffffff,secondary:#30c9e8"
+      style="width:250px;height:200px">
+  </lord-icon>
       <button id="start">Jogar</button>
     </div>
-    <!-- Script -->
     <script src="flags.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
   </body>
 </html>

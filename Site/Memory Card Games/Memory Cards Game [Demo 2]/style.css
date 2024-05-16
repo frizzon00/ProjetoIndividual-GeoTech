@@ -1,10 +1,9 @@
-/* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 p{
   font-size: 20px;
@@ -19,6 +18,31 @@ body{
   background: linear-gradient(90deg, rgba(53,169,208,1) 0%, rgba(24,126,169,1) 35%, rgba(0,212,255,1) 100%), url('../Site/fundo3.png');
   
 }
+a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.tela{
+  width:  100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.voltarInicio {
+  font-size: 1em;
+  padding: 0.7em 1em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: -97px;
+  margin-bottom: 7px;
+  width: fit-content;
+}
 
 .start{
   font-size: 1.2em;
@@ -28,6 +52,17 @@ body{
   outline: none;
   border-radius: 2em;
   cursor: pointer;
+}
+
+.novamente{
+  font-size: 1.2em;
+  padding: 1em 3em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  cursor: pointer;
+  width: fit-content;
 }
 
 ::selection{
@@ -46,8 +81,8 @@ body{
   justify-content: center;
 }
 .cards{
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 480px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -92,13 +127,15 @@ body{
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .card .front-view img{
-  max-width: 17px;
+  width: 58px;
+  height: 80px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
 }
 .card .back-view img{
-  max-width: 40px;
+  width: 90px;
+  height: 55px;
 }
 .card.flip .front-view{
   transform: rotateY(180deg);
@@ -120,8 +157,9 @@ body{
 .details p{
   font-size: 18px;
   height: 17px;
-  padding-right: 4px;
+  padding-right: 35px;
   border-right: 1px solid #ccc;
+  margin-left: auto;
 }
 .details p span{
   margin-left: 8px;
@@ -129,16 +167,24 @@ body{
 .details p b{
   font-weight: 500;
 }
+.fim{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .details button{
   cursor: pointer;
   font-size: 14px;
   color: rgb(53,169,208);
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 4px 17px;
   background: #fff;
   border: 2px solid rgb(53,169,208);
   transition: 0.3s ease;
-  margin-left: 10px;
+  margin-inline: auto;
 }
 .details button:hover{
   color: #fff;

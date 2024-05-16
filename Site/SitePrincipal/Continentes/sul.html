@@ -28,7 +28,7 @@
                     <a href="../contato.html">Contato</a>
                 </li>
                 <li>
-                    <a href="jogos.html">Jogos</a>
+                    <a href="../jogos.html">Jogos</a>
                 </li>
             </ul>
         </div>
@@ -226,32 +226,32 @@
                     title: {
                         display: true,
                         text: 'PIB (Milhões de USD)',
-                        color: '#0066ff' // Cor do título do eixo y
+                        color: 'white' // Cor do título do eixo y
                     },
                     ticks: {
-                        color: '#0066ff' // Cor dos valores do eixo y
+                        color: 'white' // Cor dos valores do eixo y
                     }
                 },
                 x: {
                     title: {
                         display: true,
                         text: 'Países',
-                        color: '#0066ff' // Cor do título do eixo x
+                        color: 'white' // Cor do título do eixo x
                     },
                     ticks: {
-                        color: '#0066ff' // Cor dos valores do eixo x
+                        color: 'white' // Cor dos valores do eixo x
                     }
                 }
             },
             plugins: {
                 legend: {
                     labels: {
-                        color: '#0066ff' // Cor do texto da legenda
+                        color: 'white' // Cor do texto da legenda
                     }
                 }
             },
             onRender: function (chart) {
-                chart.legend.legendItems[0].fontColor = '#0066ff';
+                chart.legend.legendItems[0].fontColor = 'white';
                 chart.update();
             }
         }

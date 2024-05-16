@@ -54,6 +54,17 @@ justify-content: center;
   cursor: pointer;
 }
 
+.voltar{
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 .novamente{
   font-size: 1.2em;
   padding: 1em 3em;

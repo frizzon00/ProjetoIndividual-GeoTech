@@ -26,7 +26,7 @@
                     <a href="sobre.html">Sobre</a>
                 </li>
                 <li>
-                    <a href="onu.html">ONU</a>
+                    <a href="onu.html">Objetivos</a>
                 </li>
                 <li>
                     <a href="contato.html">Contato</a>
@@ -49,9 +49,9 @@
                 <h2 class="tituloh2">Entre na GeoTech:</h2>
                 <div class="form">
                     <div class="login">
-                        <div class="formlogin" method="post">
+                        <div class="formlogin">
                             <label for="email">Email:</label>
-                            <input type="email" id="email_input" name="email" placeholder="Insira seu email" required>
+                            <input type="email" id="email_input" name="email" placeholder="Ex: xxxx@xxx.com" required>
 
                             <label for="email">Senha:</label>
                             <input type="password" id="senha_input" name="password" placeholder="Insira sua senha"
@@ -73,7 +73,7 @@
     </div>
     <div class="footer">
         <p class="footerp">© Copyright GeoTech. Todos os Direitos Reservados</p>
-    </div>
+    </div><a href=""></a>
 </body>
 
 </html>
@@ -91,53 +91,50 @@
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha Todos os Campos"
             return false;
-        } else{
-            window.location = "./ProjetoIndividual-GeoTech/Site/SitePrincipal/index.html";
         }
 
-    //     console.log("FORM LOGIN: ", emailVar);
-    //     console.log("FORM SENHA: ", senhaVar);
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
 
-    //     fetch("/usuarios/autenticar", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             emailServer: emailVar,
-    //             senhaServer: senhaVar
-    //         })
-    //     }).then(function (resposta) {
-    //         console.log("ESTOU NO THEN DO entrar()!")
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
 
-    //         if (resposta.ok) {
-    //             console.log(resposta);
+            if (resposta.ok) {
+                console.log(resposta);
 
-    //             resposta.json().then(json => {
-    //                 console.log(json);
-    //                 console.log(JSON.stringify(json));
-    //                 sessionStorage.EMAIL_USUARIO = json.email;
-    //                 sessionStorage.NOME_USUARIO = json.nome;
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
 
 
-    //                 window.location = "./ProjetoIndividual-GeoTech/Site/SitePrincipal/index.html";
+                    window.location = "http://localhost:3333/ProjetoIndividual-GeoTech/Site/SitePrincipal/index.html";
 
-    //             });
+                });
 
-    //         } else {
+            } else {
 
-    //             console.log("Houve um erro ao tentar realizar o login!");
+                console.log("Houve um erro ao tentar realizar o login!");
 
-    //             resposta.text().then(texto => {
-    //                 console.error(texto);
-    //             });
-    //         }
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
 
-    //     }).catch(function (erro) {
-    //         console.log(erro);
-    //     })
+        }).catch(function (erro) {
+            console.log(erro);
+        })
 
-    //     return false;
-    // }
+        return false;
     }
 </script>

@@ -26,7 +26,7 @@
                     <a href="sobre.html">Sobre</a>
                 </li>
                 <li>
-                    <a href="onu.html">ONU</a>
+                    <a href="onu.html">Objetivos</a>
                 </li>
                 <li>
                     <a href="contato.html">Contato</a>
@@ -55,22 +55,30 @@
                             <input type="text" id="nome_input" name="name" placeholder="Insira seu nome" required>
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email_input" name="email" placeholder="Insira seu email" required>
+                            <input type="email" id="email_input" name="email" placeholder="Ex: xxxx@xxx.com" required>
 
                             <label for="email">Senha:</label>
-                            <input type="password" id="senha_input" name="password" placeholder="Insira sua senha"
+                            <input type="password" id="senha_input" name="password" placeholder="xxxxxxx"
                                 required>
 
                             <label for="email">Confirmar Senha:</label>
                             <input type="password" id="confirmacao" name="password" placeholder="Repita a senha"
                                 required>
 
-                            <label for="email">Continente Natal:</label>
-                            <input type="text" id="continente" name="continente" placeholder="Insira sua nacionalidade"
-                                required>
+                            <label for="email">Seu Continente:</label>
+                            <select name="continente" id="continente_select">
+                                <option value="#">Selecione um Continente</option>
+                                <option value="África">África</option>
+                                <option value="América do Norte e Central">América do Norte e Central</option>
+                                <option value="América do Sul">América do Sul</option>
+                                <option value="Ásia">Ásia</option>
+                                <option value="Europa">Europa</option>
+                                <option value="Oceânia">Oceânia</option>
+                             </select>
+
 
                             <label for="email">Telefone:</label>
-                            <input type="text" id="telefone" name="telefone" placeholder="Insira seu telefone" required>
+                            <input type="text" id="telefone" name="telefone" placeholder="Ex: 11987654321" required>
 
                             <div class="enviarcadastro">
                                 <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
@@ -102,7 +110,7 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao.value;
-        var continenteVar = continente.value;
+        var continenteVar = continente_select.value;
         var telefoneVar = telefone.value
 
         if (
@@ -110,7 +118,7 @@
             emailVar == "" ||
             senhaVar == "" ||
             confirmacaoSenhaVar == "" ||
-            continenteVar == "" ||
+            continenteVar == "#" ||
             telefoneVar == ""
         ) {
             cardErro.style.display = "block";
@@ -158,15 +166,15 @@
                 window.location = "login.html";
 
 
-                limparFormulario();
-                finalizarAguardar();
+                // limparFormulario();
+                // finalizarAguardar();
             } else {
                 throw "Houve um erro ao tentar realizar o cadastro!";
             }
         })
             .catch(function (resposta) {
                 console.log(`#ERRO: ${resposta}`);
-                finalizarAguardar();
+                // finalizarAguardar();
             });
 
         return false; // Adicione isso para cancelar a submissão do formulário

@@ -181,6 +181,7 @@ a {
 .chamar {
     font-size: 30px;
     color: #ffffff;
+    
 }
 
 .cadastrar {
@@ -192,6 +193,7 @@ a {
     cursor: pointer;
     color: white;
     padding: 10px 20px;
+    font-weight: 600;
 }
 
 .cadastrar:hover {
@@ -207,7 +209,13 @@ a {
     cursor: pointer;
     color: rgb(0, 0, 0);
     font-size: 17px;
+    font-weight: 600;
 }
+
+.btncomecar:hover {
+    background-color: #e9e9e9;
+}
+
 
 .tudo {
     width: 100%;
@@ -246,12 +254,6 @@ a {
     font-weight: 500;
     font-size: 20px;
 }
-
-.btncomecar:hover {
-    background-color: #e9e9e9;
-}
-
-
 
 .inicio1 {
     display: flex;
@@ -415,13 +417,14 @@ h5 {
 .footerp {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* FIM Pagina inicial */
 
 .conteudosobre {
     background: rgb(53, 169, 208);
-    background: linear-gradient(90deg, rgba(53, 169, 208, 0.5) 0%, rgba(24, 126, 169, 0.5) 35%, rgba(0, 212, 255, 0.5) 100%), url('../assets/fundo3.png');
+    background: linear-gradient(90deg, rgba(53, 169, 208, 0.6) 0%, rgba(24, 126, 169, 0.9) 35%, rgba(0, 212, 255, 0.6) 100%), url('../assets/fundo3.png');
     width: 100%;
     height: 94vh;
     display: flex;
@@ -433,9 +436,9 @@ h5 {
 
 .conteudoonu{
     background: rgb(53, 169, 208);
-    background: linear-gradient(90deg, rgba(53, 169, 208, 0.5) 0%, rgba(24, 126, 169, 0.5) 35%, rgba(0, 212, 255, 0.5) 100%), url('../ProjetoIndividual-GeoTech/Site/fundo3.jpg');
+    background: linear-gradient(90deg, rgba(53, 169, 208, 0.6) 0%, rgba(24, 126, 169, 0.9) 35%, rgba(0, 212, 255, 0.6) 100%), url('../ProjetoIndividual-GeoTech/Site/fundo3.jpg');
     width: 100%;
-    height: 135vh;
+    height: 138vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -464,6 +467,12 @@ h5 {
     float: left;
     margin-right: 10px;
     margin-bottom: 20px;
+}
+
+.imgsobre3{
+    width: 320px;
+    height: 320px;
+    float: right;
 }
 
 h2 {
@@ -506,7 +515,7 @@ p {
     background: rgb(53, 169, 208);
     background: linear-gradient(90deg, rgba(53, 169, 208, 0.5) 0%, rgba(24, 126, 169, 0.5) 35%, rgba(0, 212, 255, 0.5) 100%), url('../assets/fundo3.png');
     width: 100%;
-    height: 108vh;
+    height: 102vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -540,8 +549,8 @@ p {
 }
 
 .esquerda {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     background-color: rgb(197, 216, 235);
     display: flex;
     justify-content: center;
@@ -559,8 +568,8 @@ form {
 }
 
 .direita {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     background-color: rgb(197, 216, 235);
     display: flex;
     justify-content: center;
@@ -578,10 +587,12 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #0066ff;
+    font-weight: 500;
 }
 
 input[type="text"],
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -635,6 +646,7 @@ input[type="submit"] {
     justify-content: center;
     flex-direction: column;
     height: fit-content;
+    font-weight: 600;
 }
 
 .entrar:hover {
